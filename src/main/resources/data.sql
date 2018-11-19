@@ -83,3 +83,27 @@ INSERT INTO Roles (id_, name_, atk_, hp_, career_) VALUES ('6', 'The God of Batt
 INSERT INTO Roles (id_, name_, atk_, hp_, career_) VALUES ('7', 'The Strength', 199, 632, 'swordman'); --張飛
 INSERT INTO Roles (id_, name_, atk_, hp_, career_) VALUES ('8', 'The Wizard of Fortune', 500, 500, 'adviser'); --諸葛亮
 INSERT INTO Roles (id_, name_, atk_, hp_, career_) VALUES ('9', 'Violence Hurricane', 230, 1000, 'swordman'); --呂布
+
+
+INSERT INTO soldier VALUES ('0001', 'cavalry');
+INSERT INTO soldier VALUES ('0002', 'spearman');
+INSERT INTO soldier VALUES ('0003', 'archer');
+INSERT INTO soldier VALUES ('0004', 'infantry');
+
+
+
+--INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('10', '羅貫中', 0, 9999999, 'writer','0003',NULL); --曹操
+INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('1', 'The Majestic Premier', 99, 589, 'swordman','0002','10'); --曹操
+INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('2', 'Brain of The Darkness', 258, 469, 'adviser','0003','10'); --司馬懿
+INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('3', 'The Lion-Hearted King', 88, 555, 'swordman','0001','10'); --孫堅
+--INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('4', 'The Angel of Wrath', 150, 450, 'swordman','S-0004 ','10'); -- 孫尚香
+--INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('5', 'The Lord of Virtue', 80, 699, 'adviser','S-0004 ','10'); -- 劉備
+--INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('6', 'The God of Battle', 180, 650, 'swordman','0002','10'); -- 關羽
+--INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('7', 'The Strength', 199, 632, 'swordman','0001','10'); --張飛
+--INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('8', 'The Wizard of Fortune', 500, 500, 'adviser','0003','10'); --諸葛亮
+--INSERT INTO hero (id_, name_, atk_, hp_, career_,soldier_id_,parent_) VALUES ('9', 'Violence Hurricane', 230, 1000, 'swordman','0002','10'); --呂布
+
+INSERT INTO hero_soldier VALUES ('10','0001');
+INSERT INTO hero_soldier VALUES ('10','0002');
+INSERT INTO hero_soldier VALUES ('10','0003');
+INSERT INTO hero_soldier VALUES ('10','0004');
